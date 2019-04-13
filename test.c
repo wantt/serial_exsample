@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define COMPORT "/dev/ttyAMA0"
+#define COMPORT "/dev/serial0"
 #define COUNT 10
 int main(void)
 {
