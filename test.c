@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define COMPORT "/dev/ttyS0"
+#define COMPORT "/dev/ttyAMA0"
 #define COUNT 10
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 			            printf("init sys fail\n");
 				          return 1;
 					    }
-	      if((fd = serialOpen(COMPORT,9600)) < 0 ) 
+	      if((fd = serialOpen(COMPORT,115200)) < 0 ) 
 		        {
 				      printf("open serial fail\n");
 				            return 1;
